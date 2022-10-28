@@ -1,0 +1,206 @@
+:root {
+    --main-gradient: linear-gradient(90deg, #2D5788, #1CA093);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+p.light-text {
+    color: #797979;
+}
+
+@media (max-width: 480px) {
+    /* primeira seção */
+
+    main section:first-child {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: fit-content;
+        padding: 80px 0 30px;
+        color: white;
+        text-align: center;
+    }
+
+    main section:first-child img:first-child {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        z-index: -1;
+    }
+
+    main section:first-child img:nth-child(2) {
+        width: 70vw;
+    }
+
+    main section:first-child h1 {
+        width: 60vw;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    main section:first-child p {
+        width: 70vw;
+        margin-bottom: 40px;
+        font-size: 1.1rem;
+        line-height: 1;
+    }
+
+    main section:first-child a {
+        padding: 10px 70px;
+        border-radius: 20px;
+        background-color: #2D5889;
+        text-decoration: none;
+        font-weight: 700;
+        transition: background-color 400ms ease;
+    }
+
+    main section:first-child a:hover {
+        background-color: white;
+        color: #333;
+    }
+
+    /* fim da primeira seção */
+
+
+    /* segunda seção */
+
+    main section:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+    }
+
+    main section:nth-child(2) div {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    main section:nth-child(2) div i {
+        padding: 20px;
+        border-radius: 50%;
+        background: var(--main-gradient);
+        color: white;
+        font-size: 5rem;
+    }
+
+    main section:nth-child(2) div h2 {
+        margin: 30px 0;
+        color: #2A668B;
+    }
+
+    main section:nth-child(2) div p {
+        margin: 0 auto;
+        width: 55vw;
+        font-size: .9rem;
+    }
+
+    /* fim da segunda seção */
+
+
+    /* terceira seção */
+
+    main section:nth-child(3) {
+        padding: 10vw 15vw;
+        background: var(--main-gradient);
+        color: white;
+    }
+
+    main section:nth-child(3) div {
+        margin-bottom: 50px;
+    }
+
+    main section:nth-child(3) div i {
+        font-size: 3rem;
+    }
+
+    main section:nth-child(3) div h2 {
+        margin-bottom: 25px;
+        font-size: 2rem;
+    }
+
+    main section:nth-child(3) div p {
+        margin-bottom: 20px;
+        font-size: .9rem;
+    }
+
+    main section:nth-child(3) div a {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0;
+        border: 1px solid rgba(255, 255, 255, .60);
+        border-radius: 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 400ms ease;
+    }
+
+    main section:nth-child(3) div a:hover {
+        background-color: white;
+        color: #333;
+    }
+
+    /* fim da terceira seção */
+
+
+    /* quarta seção */
+
+    main section:nth-child(4) {
+        padding-top: 80px;
+    }
+
+    main section:nth-child(4) h2 {
+        margin: 0 15vw;
+        color: #23818E;
+        font-size: 2rem;
+    }
+
+    main section:nth-child(4) > div:nth-child(2) {
+        padding: 0 15vw;
+    }
+
+    main section:nth-child(4) div p {
+        margin-bottom: 80px;
+        font-size: 1.1rem;
+    }
+
+    main section:nth-child(4) div div:last-child p {
+        margin-bottom: 0;
+    }
+
+    main section:nth-child(4) > div:nth-child(3) {
+        padding: 40px 15vw 80px;
+        background-color: #F2F2F2;
+    }
+
+    main section:nth-child(4) > div:nth-child(3) h3 {
+        margin-bottom: 30px;
+        color: #47869D;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    /* fim da quarta seção */
+}
